@@ -1,23 +1,261 @@
-<!-- Please copy your HTML from the ac11y lesson to here 
-   and do some styling to it. using Flex-box and Grid.
-   PS: keep your styling simple and don't spend too much time figuring out what colors, fonts etc-->
-   
-   <!-- please install sass globally by running this command
-   npm install -g sass
-
-   then run this in yout terminal: sass:watch or npm run sass:watch
-   now you can type in style.scss and it will combile it automatically to style.css-->
-
+<!-- 
+https://www.figma.com/file/fyN3JrM4xQQJpD7TWwvmTg/frame?node-id=0%3A1
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" type="text/css" href="style.css"/>  
-   <title>Portfolio</title>
-</head>
-<body>
-   <h1>Welcome to CSS assignment!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="header__header__logo">
+          <a href="#footer" aria-label="webiste Name"
+            ><i class="fab fa-react"></i
+          ></a>
+        </div>
+        <nav>
+          <ul role="tree" class="header__header__ul">
+            <li role="treeitem"><a href="#">about</a></li>
+            <li role="treeitem"><a href="#">projects</a></li>
+            <li role="treeitem"><a href="#">skills</a></li>
+            <li role="treeitem"><a href="#">experience</a></li>
+            <li role="treeitem"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section aria-label="about" title="about" class="main__about__section">
+          <article class="main__about__article">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p aria-label="article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+              Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+              Vestibulum at sodales augue, sed porttitor ante. Cras lacus est,
+              mollis quis tristique et, blandit non dolor. Aenean magna odio,
+              semper quis congue at, vestibulum pellentesque elit.
+            </p>
+          </article>
+
+          <div class="main__about__image">
+            <img src="assets/images/header.svg" alt="image" width="400px" />
+          </div>
+        </section>
+
+        <div class="main__nav__div">
+          <a href="#footer" class="main__down__arrow" role="button"></a>
+        </div>
+
+        <section
+          aria-label="projects"
+          title="projects"
+          class="main__project__section"
+        >
+          <div></div>
+
+          <article aria-label="article" class="main__project__article">
+            <nav>
+              <h2>project 1</h2>
+              <p id="projectinfo1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante.
+              </p>
+              <button id="btn4" aria-labelledby="projectinfo1 btn4">
+                open
+              </button>
+            </nav>
+            <nav>
+              <h2>project 2</h2>
+              <p id="projectinfo2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante.
+              </p>
+              <button id="btn5" aria-labelledby="projectinfo2 btn5">
+                open
+              </button>
+            </nav>
+            <nav>
+              <h2>project 3</h2>
+              <p id="projectinfo3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante.
+              </p>
+              <button id="btn6" aria-labelledby="projectinfo3 btn6">
+                open
+              </button>
+            </nav>
+          </article>
+        </section>
+
+        <nav>
+          <fieldset class="main__fieldset__skills">
+            <ul role="tree">
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-js"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-html5"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-react"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-css3"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-sass"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-node"></i></a>
+              </li>
+              <li role="treeitem">
+                <a href="#"><i class="fab fa-php"></i></a>
+              </li>
+            </ul>
+          </fieldset>
+        </nav>
+
+        <section
+          aria-label="experience"
+          title="experience"
+          class="main__experience__section"
+        >
+          <h1>experience</h1>
+          <div>
+            <div>
+              <img
+                src="assets/images/img-1.jpg"
+                alt="image"
+                height="200px"
+                width="200px"
+              />
+            </div>
+            <article>
+              <h2>position</h2>
+              <h3>company</h3>
+              <p id="article1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante. Cras lacus est,
+                mollis quis tristique et, blandit non dolor. Aenean magna odio,
+                semper quis congue at, vestibulum pellentesque elit.
+              </p>
+
+              <button id="btn1" aria-labelledby="article1 btn1">more</button>
+            </article>
+          </div>
+          <div>
+            <div>
+              <img
+                src="assets/images/img-2.jpg"
+                alt="image"
+                height="200px"
+                width="200px"
+              />
+            </div>
+            <article>
+              <h2>position</h2>
+              <h3>company</h3>
+              <p id="article2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante. Cras lacus est,
+                mollis quis tristique et, blandit non dolor. Aenean magna odio,
+                semper quis congue at, vestibulum pellentesque elit.
+              </p>
+
+              <button id="btn2" aria-labelledby="article2 btn2">more</button>
+            </article>
+          </div>
+          <div>
+            <div>
+              <img
+                src="assets/images/img-3.jpg"
+                alt="image"
+                height="200px"
+                width="200px"
+              />
+            </div>
+            <article>
+              <h2>position</h2>
+              <h3>company</h3>
+              <p id="articleBuy">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                urna eros, lobortis aliquam rutrum sit amet, fermentum nec orci.
+                Nunc iaculis tempus arcu, vel pulvinar magna sodales id.
+                Vestibulum at sodales augue, sed porttitor ante. Cras lacus est,
+                mollis quis tristique et, blandit non dolor. Aenean magna odio,
+                semper quis congue at, vestibulum pellentesque elit.
+              </p>
+
+              <button id="btn3" aria-labelledby="articleBuy btn3">more</button>
+            </article>
+          </div>
+        </section>
+
+        <form id="formId" class="form__field">
+          <label for="name">name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="message">Message</label>
+          <textarea id="message" name="message">your message</textarea>
+          <button
+            type="submit"
+            id="submitbtn"
+            value="Submit"
+            aria-labelledby="formId submitbtn"
+            class="form__field__button"
+          >
+            send
+          </button>
+        </form>
+      </main>
+
+      <footer aria-label="connect" id="footer" class="footer">
+        <p>Author</p>
+        <div class="footer__contact__icons">
+          <a class="cc-twitter btn btn-link" href="#" target="_blank"
+            ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+          ></a>
+          <a class="cc-github btn btn-link" href="#" target="_blank"
+            ><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+          <a class="cc-facebook btn btn-link" href="#" target="_blank"
+            ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/cc4be81cad.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

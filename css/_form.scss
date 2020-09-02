@@ -1,0 +1,38 @@
+.form__field {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 50px;
+  label {
+    display: block;
+    @include capitalize;
+    padding: 1rem 0.5rem;
+    font-size: 14px;
+        @include fontStyle;
+
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid $menuBgColor;
+    padding: 0.5 rem;
+    border-radius: 5px;
+    @include fontStyle;
+
+  }
+  &__button {
+    @include button;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    @include capitalize;
+    &:hover {
+      background: $menuBgColor;
+      @include btnhover;
+    }
+  }
+}

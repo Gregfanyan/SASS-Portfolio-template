@@ -1,0 +1,44 @@
+.footer {
+  background: $menuBgColor;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+
+  &__contact__icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__contact__icons a {
+    padding: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-right: 20px;
+  }
+  p {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: center;
+    @include fontStyle;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    p {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+    &__contact__icons {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+  }
+}
