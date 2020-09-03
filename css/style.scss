@@ -48,6 +48,7 @@ $menuBgColor: rgb(50, 110, 140);
 @import "./main";
 @import "./form";
 @import "./footer";
+@import "./animation";
 
 * {
   margin: 0;
@@ -63,3 +64,5 @@ body {
 .wrapper {
   position: relative;
 }
+
+

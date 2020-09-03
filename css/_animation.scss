@@ -1,0 +1,18 @@
+.header {
+  &__header__logo {
+    animation: logo 1s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+}
+
+
+@keyframes logo {
+    from {
+      transform:rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
