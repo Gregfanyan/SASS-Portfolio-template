@@ -1,5 +1,9 @@
 ## Welcome to CSS and SASS assignment.
 
-please follow the instructions which you can find in index.html
+## web preview
+
 ![app pciture](./assets/images/sass.png)
+
+## mobile preview
+
 ![mobile view](./assets/images/responsive.png)
