@@ -180,18 +180,18 @@
     &__about__section {
       display: grid;
       grid-template-columns: 1fr;
-      margin:0 auto;
+      margin: 0 auto;
       text-align: center;
     }
-    &__about__section article{
-       margin:0 auto;
+    &__about__section article {
+      margin: 0 auto;
       text-align: center;
     }
-    &__project__article{
+    &__project__article {
       display: grid;
       grid-template-columns: 1fr;
     }
-    &__experience__section div{
+    &__experience__section div {
       display: grid;
       grid-template-columns: 1fr;
       display: block;

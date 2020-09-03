@@ -10,8 +10,7 @@
     @include capitalize;
     padding: 1rem 0.5rem;
     font-size: 14px;
-        @include fontStyle;
-
+    @include fontStyle;
   }
   input,
   textarea {
@@ -21,7 +20,6 @@
     padding: 0.5 rem;
     border-radius: 5px;
     @include fontStyle;
-
   }
   &__button {
     @include button;
