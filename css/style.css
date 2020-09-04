@@ -117,11 +117,10 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 0 auto;
-  margin-top: 60px;
 }
 
-.main__about__section img {
-  margin: 0;
+.main__about__image svg {
+  width: 90%;
 }
 
 .main__about__section p {
@@ -165,6 +164,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 100px;
+}
+
+.main__about__section svg {
+  margin-top: 50px;
 }
 
 .main__about__article h2 {
@@ -205,16 +209,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 50px;
-}
-
-.main__down__arrow {
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #326e8c transparent transparent transparent;
-  cursor: pointer;
 }
 
 .main__project__section div:first-of-type {
@@ -646,6 +640,74 @@
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+  }
+}
+
+.main__down__arrow img {
+  cursor: pointer;
+  -webkit-animation: slide-up 4s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
+          animation: slide-up 4s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
