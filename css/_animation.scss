@@ -1,6 +1,6 @@
 .header {
   &__header__logo {
-    animation: logo 1s infinite linear;
+    animation: logo 3s infinite linear;
     transform-box: fill-box;
     transform-origin: center;
   }
@@ -18,7 +18,49 @@
 .main {
   &__down__arrow img{
     cursor: pointer;
-    animation: slide-up 4s infinite ease-out forwards, pulse 2s 3s ease-out infinite ;
+    animation: slide-up 6s infinite ease-out forwards, pulse 2s 3s ease-out infinite ;
+  }
+  &__about__image svg #wheel1, &__about__image svg #wheel3{
+    width: 90%;
+    animation: wheel 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+   &__about__image svg #wheel2{
+      animation: wheelReverse 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+   }
+   &__about__image svg #hands{
+      animation: roll 1s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+   }
+}
+
+@keyframes roll{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(10deg);
+  }
+}
+
+@keyframes wheel{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes wheelReverse{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(-360deg);
   }
 }
 

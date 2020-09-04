@@ -8,7 +8,6 @@
     justify-content: space-evenly;
     margin: 0 auto;
   }
- 
 
   &__about__image svg {
     width: 90%;
@@ -33,9 +32,8 @@
     @include flexCenter;
     margin-top: 100px;
   }
-  &__about__section svg{
-              margin-top:50px;
-
+  &__about__section svg {
+    margin-top: 50px;
   }
 
   &__about__article h2 {
@@ -55,6 +53,7 @@
     @include flexCenter;
     text-align: center;
   }
+  
 
   &__project__section div:first-of-type {
     border-bottom: 1px solid #000;

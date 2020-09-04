@@ -614,8 +614,8 @@
 }
 
 .header__header__logo {
-  -webkit-animation: logo 1s infinite linear;
-          animation: logo 1s infinite linear;
+  -webkit-animation: logo 3s infinite linear;
+          animation: logo 3s infinite linear;
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -645,8 +645,99 @@
 
 .main__down__arrow img {
   cursor: pointer;
-  -webkit-animation: slide-up 4s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
-          animation: slide-up 4s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
+  -webkit-animation: slide-up 6s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
+          animation: slide-up 6s infinite ease-out forwards, pulse 2s 3s ease-out infinite;
+}
+
+.main__about__image svg #wheel1, .main__about__image svg #wheel3 {
+  width: 90%;
+  -webkit-animation: wheel 2s linear infinite;
+          animation: wheel 2s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.main__about__image svg #wheel2 {
+  -webkit-animation: wheelReverse 2s linear infinite;
+          animation: wheelReverse 2s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.main__about__image svg #hands {
+  -webkit-animation: roll 1s linear infinite alternate;
+          animation: roll 1s linear infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@keyframes roll {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes wheelReverse {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes wheelReverse {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
 }
 
 @-webkit-keyframes slide-up {
