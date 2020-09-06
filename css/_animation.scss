@@ -52,7 +52,7 @@
     transform: rotateZ(0deg);
   }
   to{
-    transform: rotateZ(360deg);
+    transform: rotateZ(-360deg);
   }
 }
 @keyframes wheelReverse{
@@ -60,7 +60,7 @@
     transform: rotateZ(0deg);
   }
   to{
-    transform: rotateZ(-360deg);
+    transform: rotateZ( 360deg);
   }
 }
 

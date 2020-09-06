@@ -53,13 +53,12 @@
     @include flexCenter;
     text-align: center;
   }
-  
 
   &__project__section div:first-of-type {
     border-bottom: 1px solid #000;
     text-align: center;
     width: 40%;
-    margin: 100px auto;
+    margin: 50px auto;
   }
 
   &__project__article {
@@ -125,17 +124,19 @@
   }
 
   &__experience__section {
-    width: 70%;
     margin: 0 auto;
-    &__img__container {
-      align-items: center;
-    }
+  }
+
+  .experience__img__container img {
+    display: block;
+    margin: 0 auto;
+    margin-left: 100px;
   }
 
   &__experience__section p {
     text-align: justify;
     @include capitalize;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     @include fontStyle;
   }
@@ -147,15 +148,20 @@
     @include capitalize;
     @include fontStyle;
   }
+
   &__experience__section div {
     display: flex;
     margin: 30px;
   }
+
   &__experience__section h1 {
+    padding: 60px;
+    font-size: 30px;
     text-align: center;
-    margin: 40px;
     @include capitalize;
-    @include fontStyle;
+    width: 95%;
+    margin: 0 auto;
+    
   }
   &__experience__section button {
     @include button;
@@ -191,10 +197,17 @@
       display: grid;
       grid-template-columns: 1fr;
     }
+    &__project__article p {
+      text-align: justify;
+    }
     &__experience__section div {
       display: grid;
       grid-template-columns: 1fr;
       display: block;
+    }
+    &__img__container img {
+      display: block;
+      margin: o auto;
     }
   }
 }
